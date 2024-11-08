@@ -253,17 +253,21 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 	<script>
-		$('.map-full').mapify({
-			points: [
-				{
-					lat: 40.7143528,
-					lng: -74.0059731,
-					marker: true,
-					title: 'Marker title',
-					infoWindow: 'Live Dinner Restaurant'
-				}
-			]
-		});	
+		$(document).ready(function() {
+			// Initialize the map with specified points
+			$('.map-full').mapify({
+				points: [
+					{
+						lat: -1.9374848, // Latitude for the location
+						lng: 30.1177051, // Longitude for the location
+						marker: true,
+						title: 'Marker Title',
+						infoWindow: 'Your Location in Kigali'
+					}
+				],
+				zoom: 15 // Set the zoom level
+			});
+		});
 	</script>
 </body>
 </html>
